@@ -19,5 +19,11 @@ int main()
     s = temp;
     cout << s << endl;
 
+    const string s("ajwejkqwe");
+    for (auto &c : s)   // c的类型：const char &
+    {
+        continue;
+    }
+    
     return 0;
 }
