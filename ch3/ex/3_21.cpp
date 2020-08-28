@@ -39,9 +39,9 @@ int main()
 void printVecInt(vector<int> vecInt)
 {
     cout << "size: " << vecInt.size() << endl;
-    for (auto i : vecInt)
+    for (auto it = vecInt.begin(); it != vecInt.end(); ++it)
     {
-        cout << i << " ";
+        cout << (*it) << "_";
     }
     cout << endl;
 }
@@ -49,9 +49,9 @@ void printVecInt(vector<int> vecInt)
 void printVecStr(vector<string> vecStr)
 {
     cout << "size: " << vecStr.size() << endl;
-    for (auto c : vecStr)
+    for (auto it = vecStr.begin(); it != vecStr.end(); ++it)
     {
-        cout << c << " ";
+        cout << (*it) << "_";
     }
     cout << endl;
 }
